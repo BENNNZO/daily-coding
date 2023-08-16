@@ -108,8 +108,8 @@ let profileEl2 = document.getElementById("profile-picture-2")
 let profileEl3 = document.getElementById("profile-picture-3")
 
 let nameEl1 = document.getElementById("name-1")
-// let nameEl2 = document.getElementById("name-2")
-// let nameEl3 = document.getElementById("name-3")
+let nameEl2 = document.getElementById("name-2")
+let nameEl3 = document.getElementById("name-3")
 
 
 // i get this is weird and i could do a for loop with a query selector but this is just easier and simpler
@@ -118,5 +118,5 @@ profileEl2.setAttribute("src", `https://randomuser.me/api/portraits/${Math.rando
 profileEl3.setAttribute("src", `https://randomuser.me/api/portraits/${Math.random() > 0.5 ? "men" : "women"}/${Math.round(Math.random() * 99)}.jpg`)
 
 nameEl1.innerText = `${nameList[Math.round(Math.random() * 99)]}`
-// nameEl2.innerText = `${nameList[Math.round(Math.random() * 99)]}`
-// nameEl3.innerText = `${nameList[Math.round(Math.random() * 99)]}`
+nameEl2.innerText = `${nameList[Math.round(Math.random() * 99)]}`
+nameEl3.innerText = `${nameList[Math.round(Math.random() * 99)]}`
