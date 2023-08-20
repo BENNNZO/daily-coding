@@ -1,3 +1,5 @@
+document.getElementById("code-input-1").focus()
+
 window.addEventListener("input", e => {
     let index = parseInt(e.target.getAttribute("id").replace("code-input-", ""))
 
