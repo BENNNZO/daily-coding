@@ -11,7 +11,25 @@
 
     <link rel="stylesheet" href="./styles.css">
 </head>
-<body class="bg-[#DDDDDD] grid place-items-center w-screen h-screen">
-
+<body class="bg-[#CAD9FD] grid place-items-center w-screen h-screen">
+    <div class="border-4 border-black">
+        <div class="bg-white p-12 rounded-2xl flex flex-col gap-5">
+            <p class="font-bold text-lg">Choose a view for</br> the map</p>
+            <div class="flex flex-row gap-3 justify-between items-start">
+                <input type="radio" id="daily" class="w-6 h-6">
+                <div>
+                    <p class="font-semibold h-6">Daily Avaliability</p>
+                    <p class="text-sm mt-2">View the hours per day a room is open</p>
+                </div>
+            </div>
+            <div class="flex flex-row gap-3 justify-between items-start">
+                <input type="radio" id="weekly" class="w-6 h-6">
+                <div>
+                    <p class="font-semibold h-6">Weekly Capacity</p>
+                    <p class="text-sm mt-2">View the hours per week a room is book</p>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
