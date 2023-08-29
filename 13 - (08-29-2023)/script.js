@@ -5,6 +5,8 @@ let date = new Date()
 
 function init() {
     document.getElementById("month").innerText = monthDict[new Date().getMonth()]
+    document.getElementById("card-date").innerText = new Date().getDate()
+    document.getElementById("card-day").innerText = daysDict[new Date().getDay()]
 
     let datesArr = []
 
@@ -29,7 +31,6 @@ function init() {
         }
     }
 
-    // document.getElementById("dates").innerHTML = datesArr
     document.getElementById("dates").innerHTML = datesArr.join("")
 }
 
