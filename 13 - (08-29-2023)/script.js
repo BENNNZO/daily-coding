@@ -19,13 +19,13 @@ function init() {
             } else {
                 datesArr.push(`
                     ${index - 1 < new Date().getDate() ? `
-                        <div class="text-center opacity-50">
+                        <div class="text-center font-medium w-8 h-8 grid place-items-center opacity-30">
                     ` : index - 1 === new Date().getDate() ? `
-                        <div class="text-center bg-blue-400">
+                        <div class="text-center font-medium w-8 h-8 grid place-items-center shadow-md text-white rounded-full bg-gradient-to-r from-sky-300 to-blue-400">
                     ` : `
-                        <div class="text-center text-bold">
+                        <div class="text-center font-medium w-8 h-8 grid place-items-center">
                     `}
-                        ${index - 1}
+                        <p>${index - 1}</p>
                     </div>
                 `)
             }
